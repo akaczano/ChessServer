@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "frIRs1d8nQsT9PDAF/yZ+BLXrBvnwm8VEQ7FRRuMbkZwkduekzMfQe6yksT0nfAtP+k+MCy4uqPIKCOruCt74g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\thelo\\source\\repos\\ChessApp\\ChessApp\\ChessApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\thelo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\thelo\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\thelo\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\thelo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

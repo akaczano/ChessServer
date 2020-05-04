@@ -1,0 +1,37 @@
+﻿@page "/"
+@using ChessModels
+@using ChessApp.Data
+@inject PositionService Service
+
+@if (pos != null) { 
+    
+        <ChessBoard @ref="Board" Position="@pos"></ChessBoard>
+        <div class="row" style="margin-top: 10px">
+            <button class="btn btn-primary" style="margin-right: 10px" @onclick="GoBack">&lt;</button>
+            <button class="btn btn-primary" @onclick="GoForward">&gt;</button>
+        </div>
+}
+else {
+    <p> No Position Yet </p>
+}
+@code {
+
+    ChessPosition pos = new ChessPosition();
+    ChessBoard Board;
+
+    private void GoBack() {
+        pos.UndoLastMove();
+    }
+    private void GoForward() {
+        pos.RedoMove();
+    }
+
+
+    protected override async Task OnInitializedAsync() {
+        pos = await Service.GetPositionAsync();
+        Service.JoinParty((ChessClient)this);
+    }
+}
+
+
+

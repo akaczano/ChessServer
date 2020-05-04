@@ -1,0 +1,40 @@
+﻿@using ChessModels
+@using ChessApp.Data
+@inject PositionService Service
+
+<div draggable="false" class="board">
+
+    @for (int i = 7; i >= 0; i--) {
+        for (int j = 0; j < 8; j++) {
+            int cachei = i;
+            int cachej = j;
+
+            ChessPiece p = Position.Board[j, i];
+            <CascadingValue Value="this">
+                <Square Occupant="@p" I="@cachei" J="@cachej"></Square>
+            </CascadingValue>
+        }
+    }
+
+</div>
+
+
+
+@code {
+    [Parameter]
+    public ChessPosition Position { get; set; }
+
+    public Location UnderDrag { get; set; }
+
+    public void ExecuteMove(Location start, Location end) {
+        Console.WriteLine("({0}, {1}) -> ({2}, {3})", start.X, start.Y, end.X, end.Y);
+        ChessMove move = Position.BuildMove(start, end, ChessPiece.EMPTY);
+        if (Position.IsMoveLegal(move)) {
+            Position.MakeMoveOnBoard(move);
+        }
+
+        //this.StateHasChanged();
+        Service.TellEverybody();
+    }
+
+}

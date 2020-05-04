@@ -1,0 +1,42 @@
+﻿@using System.Diagnostics
+@using ChessModels 
+
+<div draggable="false" class="board-square"
+     @ondragstart="HandleDrag"
+     @ondrop="HandleDrop"
+     @ondragenter="HandleDragEnter"
+     @ondragleave="HandleDragLeave"
+     ondragover="event.preventDefault();">
+    @if (Occupant != ChessPiece.EMPTY) {
+        <img draggable="true" src="images/@(Occupant.GetResourceName()).png" />
+    }
+</div>
+
+@code {
+    [CascadingParameter]
+    public ChessBoard Board { get; set; }
+
+    [Parameter]
+    public ChessPiece Occupant { get; set; }
+
+    [Parameter]
+    public int I { get; set; }
+
+    [Parameter]
+    public int J { get; set; }
+
+    public void HandleDrag() {
+        Board.UnderDrag = new Location(J, I);
+    }
+
+    public void HandleDrop() {
+        Board.ExecuteMove(Board.UnderDrag, new Location(J, I));
+    }
+
+    public void HandleDragEnter() {
+
+    }
+
+    public void HandleDragLeave() { }
+
+}

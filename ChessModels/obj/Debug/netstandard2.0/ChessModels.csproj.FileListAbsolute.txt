@@ -1,0 +1,9 @@
+C:\Users\thelo\source\repos\ChessApp\ChessModels\bin\Debug\netstandard2.0\ChessModels.deps.json
+C:\Users\thelo\source\repos\ChessApp\ChessModels\bin\Debug\netstandard2.0\ChessModels.dll
+C:\Users\thelo\source\repos\ChessApp\ChessModels\bin\Debug\netstandard2.0\ChessModels.pdb
+C:\Users\thelo\source\repos\ChessApp\ChessModels\obj\Debug\netstandard2.0\ChessModels.csprojAssemblyReference.cache
+C:\Users\thelo\source\repos\ChessApp\ChessModels\obj\Debug\netstandard2.0\ChessModels.csproj.CoreCompileInputs.cache
+C:\Users\thelo\source\repos\ChessApp\ChessModels\obj\Debug\netstandard2.0\ChessModels.AssemblyInfoInputs.cache
+C:\Users\thelo\source\repos\ChessApp\ChessModels\obj\Debug\netstandard2.0\ChessModels.AssemblyInfo.cs
+C:\Users\thelo\source\repos\ChessApp\ChessModels\obj\Debug\netstandard2.0\ChessModels.dll
+C:\Users\thelo\source\repos\ChessApp\ChessModels\obj\Debug\netstandard2.0\ChessModels.pdb

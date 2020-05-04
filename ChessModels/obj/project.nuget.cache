@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Rs7VJ02s+nHuWLX7rH2mfsMTm0ZLxVcoLp1mjhFCB47tPlO/xYGX62rh/X07sdTNtMZAagk1feaWU9qZRY++Bw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\thelo\\source\\repos\\ChessApp\\ChessModels\\ChessModels.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\thelo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\thelo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
